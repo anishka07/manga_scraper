@@ -17,8 +17,8 @@ class MangaPipeline:
     def create_connection(self):
         self.conn = mysql.connector.connect(host='localhost',
                                             user='root',
-                                            passwd='anishka123',
-                                            database='manga_db')
+                                            passwd='yourpw',
+                                            database='db_name')
         self.curr = self.conn.cursor()
 
     def create_table(self):
